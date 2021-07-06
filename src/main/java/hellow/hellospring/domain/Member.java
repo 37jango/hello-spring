@@ -6,10 +6,8 @@ package hellow.hellospring.domain;
 아직 데이터 저장소가 선정되지 않음, DB가 아직 선정X(가상 시나리오)
  */
 public class Member {
-
-	private Long id; // 시스템이 정하는 아이디(고객이 정하는 아이디가 아님)
-	private String name; // 닉네임의 개념
-
+	private Long id;
+	private String name;
 
 	public Long getId() {
 		return id;

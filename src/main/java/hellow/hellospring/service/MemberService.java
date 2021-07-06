@@ -2,15 +2,19 @@ package hellow.hellospring.service;
 
 import hellow.hellospring.domain.Member;
 import hellow.hellospring.repository.MemberRepository;
-import hellow.hellospring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService { //테스트 실행시에 ctrl + shift + T 하면 테스트 실행
 
-	private final MemberRepository memberRepository = new MemoryMemberRepository();
+	private final MemberRepository memberRepository;
 
+
+
+	public MemberService(MemberRepository memberRepository){
+		this.memberRepository = memberRepository;
+	}
 	/**
 	 * 회원 가입
 	 */

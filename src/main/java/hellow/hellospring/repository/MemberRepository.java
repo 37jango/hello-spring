@@ -10,4 +10,5 @@ public interface MemberRepository {
 	Optional<Member> findById(Long id);
 	Optional<Member> findByName(String name);
 	List<Member> findAll();
+	//Optional? -> Null이 반환되지 않게 한 번 더 감싸주는 방식
 }
