@@ -34,7 +34,7 @@ public class MemberService { //테스트 실행시에 ctrl + shift + T 하면 �
 	/**
 	 * 전체 회원 조회
 	 */
-	public List<Member> findMember(){
+	public List<Member> findMembers(){
 		return memberRepository.findAll();
 	}
 
